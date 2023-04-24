@@ -46,8 +46,6 @@ main {
   height: 35vh;
   border-radius: 12px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   border: solid 2px black;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
   background-image: url("../img/pagoda-g850353fdc_1920.jpg");
@@ -58,6 +56,7 @@ main {
 .grid-container .grid-item:hover {
   scale: 1.1;
   opacity: 1;
+  z-index: 10;
 }
 
 @media (min-width: 576px) {
