@@ -36,6 +36,8 @@ nav {
   background-color: deepskyblue;
   height: 100px;
   justify-content: center;
+  top: 0;
+  left: 0;
 }
 
 .nav-container {
