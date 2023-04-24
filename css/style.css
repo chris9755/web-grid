@@ -53,9 +53,11 @@ main {
   background-image: url("../img/pagoda-g850353fdc_1920.jpg");
   background-size: cover;
   background-position: bottom;
+  opacity: 0.5;
 }
 .grid-container .grid-item:hover {
   scale: 1.1;
+  opacity: 1;
 }
 
 @media (min-width: 576px) {
