@@ -3,7 +3,6 @@ a {
 }
 
 button {
-  border: none;
   cursor: pointer;
 }
 
@@ -36,6 +35,7 @@ nav {
   display: flex;
   background-color: deepskyblue;
   height: 100px;
+  justify-content: center;
 }
 
 .nav-container {
@@ -43,12 +43,19 @@ nav {
   max-width: 1800px;
   width: 100%;
   display: flex;
+  justify-content: center;
 }
 .nav-container .nav-items {
   width: 100%;
   display: flex;
-  justify-content: space-between;
   display: none;
+  justify-content: end;
+  align-items: center;
+}
+.nav-container .nav-items a {
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 0 15px;
 }
 @media (min-width: 768px) {
   .nav-container .nav-items {
