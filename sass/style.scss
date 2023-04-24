@@ -25,6 +25,7 @@ body {
 	// align-items: center;
 	min-height: 100vh;
 	
+	
 }
 main{
 	display: flex;
@@ -41,6 +42,8 @@ nav{
 	// position: fixed;
 	top: 0;
 	left: 0;
+	position: fixed;
+	z-index: 50;
 
 }
 .nav-container{
@@ -58,7 +61,7 @@ nav{
 		a{
 			text-transform: uppercase;
 			font-size: 2rem;
-			margin-left: 20px;
+			margin:0 20px;
 		}
 
 	}
@@ -86,6 +89,7 @@ nav{
 
 .grid-container{
 	margin: 20px 5px;
+	margin-top: 100px;
 	max-width: 1800px;
 	width: 100%;
 	min-height: 100vh;
@@ -93,6 +97,7 @@ nav{
 	grid-template-columns: repeat(1, 1fr);
 	grid-template-rows: repeat(12, 1fr);
 	gap: 10px;
+	overflow: hidden;
 	
 	// background-color: darkgreen;
 	.grid-item{
@@ -100,7 +105,7 @@ nav{
 		height: 35vh;
 		border-radius: 12px;
 		// background-color: rgb(206, 132, 106);
-		display:inline-flex;
+		display:flex;
 		// justify-content: center;
 		// align-items: center;
 		border: solid 2px black;
@@ -119,6 +124,11 @@ nav{
 		opacity: 1;
 		z-index: 10;
 	}
+	.grid-item~.grid-container{
+		scale: 0;
+	}
+	
+	
 }
 
 
