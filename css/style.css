@@ -27,7 +27,8 @@ body {
 
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 nav {
@@ -102,6 +103,10 @@ header .hero-img {
   margin: 0 25px;
   white-space: nowrap;
   color: #999;
+  transition: 0.35s;
+}
+.nav-items a:hover {
+  color: antiquewhite;
 }
 
 .nav-btn {
@@ -181,4 +186,23 @@ header .hero-img {
     grid-template-rows: repeat(3, 1fr);
     gap: 15px;
   }
+}
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 150vh;
+}
+.aboutme .card {
+  height: 200px;
+  width: 200px;
+  border: solid 1px black;
+}
+.aboutme h2 {
+  padding: 20px;
+}
+.aboutme p {
+  font-size: 2rem;
+  padding: 20px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
