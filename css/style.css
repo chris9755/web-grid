@@ -107,6 +107,7 @@ header .hero-img {
 }
 .nav-items a:hover {
   color: antiquewhite;
+  box-shadow: inset 0px -2px 0px antiquewhite;
 }
 
 .nav-btn {
@@ -155,7 +156,7 @@ header .hero-img {
   display: flex;
   width: 100%;
   height: 100%;
-  opacity: 0.65;
+  opacity: 0.75;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
