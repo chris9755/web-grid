@@ -41,6 +41,7 @@ nav {
   left: 0;
   z-index: 50;
   background-image: url("../img/banner-gdc475eb52_1920.jpg");
+  background-size: cover;
   border-bottom: solid 1px #999;
 }
 
@@ -49,17 +50,16 @@ header {
   width: 100%;
   margin-top: 80px;
   justify-content: center;
+  color: antiquewhite;
 }
 header h1 {
   text-align: center;
   font-size: 4rem;
   padding: 15px 20px;
-  color: white;
 }
 header p {
   text-align: center;
   font-size: 2.8rem;
-  color: white;
   padding: 0 20px;
 }
 header .hero-img {
@@ -193,6 +193,9 @@ header .hero-img {
   flex-direction: column;
   align-items: center;
   min-height: 150vh;
+  background-attachment: fixed;
+  background-image: url("../img/paper-gefe5502bd_1920.jpg");
+  color: antiquewhite;
 }
 .aboutme .card {
   height: 200px;
