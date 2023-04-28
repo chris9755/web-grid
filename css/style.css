@@ -134,7 +134,7 @@ header .hero-img {
     left: 0;
     top: 120px;
     background-color: rgb(18, 92, 18);
-    transform: translate(100%);
+    transform: translateX(-100%);
     transition: 1s;
   }
   .nav-items a {
