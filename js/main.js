@@ -12,16 +12,18 @@ window.addEventListener("scroll", ()=>{
 
 
 
-const nav = document.querySelector('.nav')
+const mobileNav = document.querySelector('.nav-items')
 const navBtn = document.querySelector('.nav-btn');
-const allNavItems = document.querySelectorAll('.nav-items')
 
-const handleNav = () =>{
-  nav.classList.toggle('.nav-active')
+// const handleNav = () =>{
+//   nav.classList.toggle('.nav-active')
+// }
+
+
+navBtn.addEventListener("click", function(){
+  mobileNav.classList.toggle('active')
 }
-
-
-navBtn.addEventListener("click", handleNav)
+)
 
 
 
