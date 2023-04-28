@@ -49,6 +49,9 @@ header h1 {
   font-size: 4rem;
   padding: 15px 20px;
 }
+header h1 span {
+  color: aqua;
+}
 header p {
   text-align: center;
   font-size: 2.8rem;
@@ -80,8 +83,11 @@ header .hero-img {
   margin-left: 25px;
   color: #999;
 }
+.nav-container .logo p {
+  font-size: 2.6rem;
+}
 .nav-container .logo span {
-  font-size: 2rem;
+  color: aqua;
 }
 
 .nav-items {

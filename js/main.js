@@ -12,13 +12,16 @@ window.addEventListener("scroll", ()=>{
 
 
 
-const nav = document.querySelector('.nav-items')
+const nav = document.querySelector('.nav')
+const navBtn = document.querySelector('.nav-btn');
+const allNavItems = document.querySelectorAll('.nav-items')
 
-document.addEventListener('click', () => {
-  if (nav.classList.contains('show')) {
-    nav.classList.remove('show')
-  }
-})
+const handleNav = () =>{
+  nav.classList.toggle('.nav-active')
+}
+
+
+navBtn.addEventListener("click", handleNav)
 
 
 
