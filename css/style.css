@@ -212,4 +212,29 @@ header .hero-img {
   font-size: 2rem;
   padding: 20px;
   text-align: center;
+}
+
+.to-top {
+  position: fixed;
+  bottom: 16px;
+  right: 6px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  text-decoration: none;
+  background-color: rgba(250, 235, 215, 0.836);
+  color: #999;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.45s;
+}
+
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
