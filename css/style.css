@@ -9,6 +9,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  scroll-margin-top: 280px;
 }
 
 body {
@@ -87,31 +88,13 @@ header .hero-img {
   display: flex;
   align-items: center;
   margin-left: 25px;
-  color: #999;
+  color: antiquewhite;
 }
 .nav-container .logo p {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
 }
 .nav-container .logo span {
   color: aqua;
-}
-
-.nav-items {
-  width: 100%;
-  justify-content: end;
-}
-.nav-items a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 2rem;
-  margin: 0 25px;
-  white-space: nowrap;
-  color: #999;
-  transition: 0.35s;
-}
-.nav-items a:hover {
-  color: aqua;
-  box-shadow: inset 0px -2px 0px aqua;
 }
 
 .nav-btn {
@@ -126,35 +109,66 @@ header .hero-img {
   font-size: 3rem;
 }
 
-@media (min-width: 768px) {
-  .nav-items {
-    display: flex;
-  }
-}
-@media (max-width: 768px) {
-  .nav-items {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    left: 0;
-    top: 120px;
-    background-color: rgb(18, 92, 18);
-    transform: translateX(-100%);
-    transition: 1s;
-  }
-  .nav-items a {
-    padding: 20px 0;
-    font-size: 4rem;
-  }
-}
 .nav-items.active {
   transform: translateX(0);
+  left: 0;
+  transition: ease 0.5s;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #314137;
+  position: absolute;
+  top: 80px;
+  left: -100%;
+  width: 100%;
+}
+.nav-items a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  padding: 15px 0;
+  white-space: nowrap;
+  color: aqua;
+  transition: 0.35s;
+}
+.nav-items a:hover {
+  color: aqua;
+  box-shadow: inset 0px -2px 0px aqua;
+}
+
+.nav-items.active1 {
+  display: none;
 }
 
 @media (min-width: 768px) {
   .nav-btn {
     display: none;
+  }
+  .nav-items {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: end;
+    background-color: transparent;
+  }
+  .nav-items a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 0 25px;
+    white-space: nowrap;
+    color: antiquewhite;
+    transition: 0.35s;
+  }
+  .nav-items a:hover {
+    color: aqua;
+    box-shadow: inset 0px -2px 0px aqua;
   }
 }
 .grid-container {
@@ -171,7 +185,7 @@ header .hero-img {
   width: 100%;
   height: 100%;
   display: flex;
-  border: solid 1px black;
+  border: solid 1px antiquewhite;
   overflow: hidden;
 }
 .grid-container .grid-item img {
@@ -179,7 +193,7 @@ header .hero-img {
   display: flex;
   width: 100%;
   height: 100%;
-  opacity: 0.75;
+  opacity: 0.7;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -188,7 +202,7 @@ header .hero-img {
 
 .grid-item img:hover {
   opacity: 1;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 @media (min-width: 576px) {
@@ -206,6 +220,10 @@ header .hero-img {
     margin-right: 10px;
   }
 }
+.to-top {
+  display: none;
+}
+
 @media (min-width: 992px) {
   .grid-container {
     grid-template-columns: repeat(4, 1fr);
@@ -250,10 +268,15 @@ header .hero-img {
 }
 .aboutme .card {
   display: flex;
-  height: 40px;
-  width: 40px;
+  height: 400px;
+  width: 600px;
   border: solid 1px black;
   background-color: burlywood;
+  background-image: url("../img/people-ga97619c2e_1920.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  border: solid 1px antiquewhite;
 }
 .aboutme p {
   font-size: 2rem;
@@ -273,13 +296,43 @@ header .hero-img {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: blueviolet;
+  background-color: #999;
   max-width: 1800px;
   width: 100%;
+  margin: 30px 0;
+}
+.contact .contact-items i {
+  font-size: 4rem;
+  margin: 35px;
+  color: aqua;
+  transition: 0.4s;
+  opacity: 0.7;
+}
+.contact .contact-items i:hover {
+  scale: 1.5;
+  opacity: 1;
+}
+.contact .contact-items .fa-instagram::after {
+  position: absolute;
+  content: "instagram";
+  top: -100%;
+  left: -100%;
 }
 
 .gallery {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+}
+.footer p {
+  font-size: 2rem;
+  color: antiquewhite;
 }/*# sourceMappingURL=style.css.map */
