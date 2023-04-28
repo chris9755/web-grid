@@ -99,8 +99,8 @@ header .hero-img {
   transition: 0.35s;
 }
 .nav-items a:hover {
-  color: antiquewhite;
-  box-shadow: inset 0px -2px 0px antiquewhite;
+  color: aqua;
+  box-shadow: inset 0px -2px 0px aqua;
 }
 
 .nav-btn {
@@ -126,8 +126,8 @@ header .hero-img {
   }
 }
 .grid-container {
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 8px;
+  margin-right: 8px;
   max-width: 1800px;
   min-height: 100vh;
   display: grid;
@@ -170,6 +170,8 @@ header .hero-img {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 @media (min-width: 992px) {
@@ -177,6 +179,8 @@ header .hero-img {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 .aboutme {
@@ -197,7 +201,9 @@ header .hero-img {
   background-color: burlywood;
 }
 .aboutme h2 {
-  padding: 20px;
+  text-transform: uppercase;
+  margin: 25px 0 10px 0;
+  font-size: 2.2rem;
 }
 .aboutme p {
   font-size: 2rem;
@@ -225,7 +231,7 @@ header .hero-img {
 
 .to-top.active {
   bottom: 32px;
-  right: 8px;
+  right: 12px;
   pointer-events: auto;
   opacity: 1;
 }
@@ -234,6 +240,7 @@ header .hero-img {
   width: 100px;
   height: 3px;
   background-color: aqua;
+  margin-bottom: 20px;
 }
 
 .contact {
@@ -244,4 +251,20 @@ header .hero-img {
   background-color: blueviolet;
   max-width: 1800px;
   width: 100%;
+}
+.contact h2 {
+  text-transform: uppercase;
+  margin: 25px 0 10px 0;
+  font-size: 2.2rem;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery h2 {
+  text-transform: uppercase;
+  margin: 25px 0 10px 0;
+  font-size: 2.2rem;
 }/*# sourceMappingURL=style.css.map */
