@@ -16,7 +16,7 @@ html {
 
 body {
 	font-family: "Lato", sans-serif;
-	background-color: #363232;
+	background-color: $background-color;
 	min-height: 100vh;
 	width: 100%;
 	display: flex;
@@ -32,7 +32,7 @@ main {
 		text-transform: uppercase;
 		margin: 100px 0 10px 0;
 		font-size: 2.4rem;
-		color: antiquewhite;
+		color: $primary-color;
 	}
 }
 
@@ -54,14 +54,14 @@ header {
 	display: flex;
 	width: 100%;
 	margin-top: 80px;
-	color: antiquewhite;
+	color: $primary-color;
 	h1 {
 		text-align: center;
 		font-size: 4rem;
 		padding: 15px 20px;
 		letter-spacing: 2px;
 		span {
-			color: aqua;
+			color: $secondary-color;
 		}
 	}
 	p {
@@ -85,7 +85,7 @@ header {
 .underline {
 	width: 100px;
 	height: 3px;
-	background-color: aqua;
+	background-color: $secondary-color;
 	margin-bottom: 60px;
 }
 .nav-container {
@@ -101,12 +101,12 @@ header {
 		display: flex;
 		align-items: center;
 		margin-left: 25px;
-		color: antiquewhite;
+		color: $primary-color;
 		p {
 			font-size: 2.8rem;
 		}
 		span {
-			color: aqua;
+			color: $secondary-color;
 		}
 	}
 	.nav-btn {
@@ -117,7 +117,7 @@ header {
 		padding: 15px;
 		background: none;
 		border: none;
-		color: antiquewhite;
+		color: $primary-color;
 		font-size: 3rem;
 	}
 }
@@ -139,7 +139,7 @@ header {
 		font-size: 2.6rem;
 		padding: 30px 0;
 		white-space: nowrap;
-		color: aqua;
+		color: $secondary-color;
 	}
 }
 
@@ -181,7 +181,7 @@ header {
 			font-size: 2rem;
 			margin: 0 25px;
 			white-space: nowrap;
-			color: antiquewhite;
+			color: $primary-color;
 			transition: 0.35s;
 			overflow: hidden;
 		}
@@ -192,17 +192,17 @@ header {
 			left: -100%;
 			width: 100%;
 			height: 3px;
-			background-color: aqua;
+			background-color: $secondary-color;
 			transition: ease-in 0.3s;
 		}
 
 		a:hover::after {
-			color: aqua;
+			color: $secondary-color;
 			left: 0;
-			// box-shadow: inset 0px -3px 0px aqua;
+			// box-shadow: inset 0px -3px 0px $secondary-color;
 		}
 		a:hover {
-			color: aqua;
+			color: $secondary-color;
 		}
 	}
 }
@@ -225,7 +225,7 @@ header {
 		width: 100%;
 		height: 100%;
 		display: flex;
-		border: solid 1px antiquewhite;
+		border: solid 1px $primary-color;
 		overflow: hidden;
 		img {
 			transition: ease 0.5s;
@@ -243,7 +243,7 @@ header {
 	transform: scale(1.2);
 }
 .grid-item:hover {
-	border: solid 2px aqua;
+	border: solid 2px $secondary-color;
 }
 
 @media (min-width: 576px) {
@@ -288,7 +288,7 @@ header {
 		font-size: 20px;
 		text-decoration: none;
 		background-color: rgba(0, 255, 255, 0.6);
-		color:#363232 ;
+		color:$background-color ;
 		opacity: 0;
 		pointer-events: none;
 		transition: 0.5s;
@@ -310,7 +310,7 @@ header {
 	background-attachment: fixed;
 	background-image: url("../img/rain-g94c91878f_1920.jpg");
 	background-size: cover;
-	color: antiquewhite;
+	color: $primary-color;
 	p{
 		max-width: 1800px;
 	}
@@ -328,7 +328,7 @@ header {
 		flex-direction: column;
 		width: 100%;
 		border-radius: 10px;
-		border: solid 2px aqua;
+		border: solid 2px $secondary-color;
 		margin: 50px 10px;
 		overflow: hidden;
 
@@ -347,8 +347,8 @@ header {
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			border-top: solid 1px aqua;
-			background-color: #363232;
+			border-top: solid 1px $secondary-color;
+			background-color: $background-color;
 			filter: blur(0px);
 			p, h3{
 				padding: 30px;
@@ -407,14 +407,14 @@ header {
 		i {
 			font-size: 4rem;
 			margin: 40px;
-			color: aqua;
+			color: $secondary-color;
 			transition: 0.4s;
 			opacity: 0.7;
 		}
 		i:hover {
 			scale: 1.5;
 			opacity: 1;
-			text-shadow: 0 0 5px aqua;
+			text-shadow: 0 0 5px $secondary-color;
 		}
 	}
 }
@@ -427,7 +427,7 @@ header {
 	height: 10vh;
 	p {
 		font-size: 2rem;
-		color: antiquewhite;
+		color: $primary-color;
 	}
 }
 
