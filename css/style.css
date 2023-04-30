@@ -79,6 +79,13 @@ header .hero-img {
   height: 400px;
 }
 
+.underline {
+  width: 100px;
+  height: 3px;
+  background-color: aqua;
+  margin-bottom: 60px;
+}
+
 .nav-container {
   position: relative;
   max-width: 1800px;
@@ -100,8 +107,7 @@ header .hero-img {
 .nav-container .logo span {
   color: aqua;
 }
-
-.nav-btn {
+.nav-container .nav-btn {
   position: absolute;
   right: 20px;
   top: 50%;
@@ -117,7 +123,6 @@ header .hero-img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #363232;
   position: absolute;
   top: 80px;
   left: -100%;
@@ -192,6 +197,12 @@ header .hero-img {
     color: aqua;
   }
 }
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .grid-container {
   margin-left: 8px;
   margin-right: 8px;
@@ -303,7 +314,7 @@ header .hero-img {
   justify-content: center;
   flex-flow: wrap;
   gap: 40px;
-  width: 100%;
+  width: 95%;
   max-width: 1800px;
 }
 .aboutme .card-box .card {
@@ -320,6 +331,8 @@ header .hero-img {
   background-position: center;
   background-size: cover;
   aspect-ratio: 16/9;
+  filter: blur(0px);
+  transition: ease 0.4s;
 }
 .aboutme .card-box .card .card-body {
   display: flex;
@@ -328,12 +341,14 @@ header .hero-img {
   align-items: center;
   border-top: solid 1px aqua;
   background-color: #363232;
+  filter: blur(0px);
 }
 .aboutme .card-box .card .card-body p, .aboutme .card-box .card .card-body h3 {
   padding: 30px;
 }
 .aboutme .card-box .card .card-body h3 {
-  font-size: 2rem;
+  font-size: 2.4rem;
+  font-weight: bold;
   text-transform: uppercase;
 }
 .aboutme p {
@@ -342,18 +357,21 @@ header .hero-img {
   text-align: center;
 }
 
-@media (min-width: 776px) {
-  .card {
-    width: 45%;
+@media (min-width: 576px) {
+  .aboutme .card-box .card {
+    width: 80%;
   }
 }
-.underline {
-  width: 100px;
-  height: 3px;
-  background-color: aqua;
-  margin-bottom: 60px;
+@media (min-width: 776px) and (max-width: 992px) {
+  .aboutme .card-box .card {
+    width: 40%;
+  }
 }
-
+@media (min-width: 992px) {
+  .aboutme .card-box .card {
+    width: 30%;
+  }
+}
 .contact {
   display: flex;
   flex-direction: column;
@@ -379,13 +397,6 @@ header .hero-img {
   text-shadow: 0 0 5px aqua;
 }
 
-.gallery {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  scroll-margin-top: 100px;
-}
-
 .footer {
   display: flex;
   justify-content: center;
@@ -396,15 +407,4 @@ header .hero-img {
 .footer p {
   font-size: 2rem;
   color: antiquewhite;
-}
-
-@media (min-width: 992px) {
-  .aboutme .card-box .card {
-    width: 30%;
-  }
-}
-@media (min-width: 776px) and (max-width: 992px) {
-  .aboutme .card-box .card {
-    width: 40%;
-  }
 }/*# sourceMappingURL=style.css.map */
