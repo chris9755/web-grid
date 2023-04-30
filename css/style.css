@@ -260,6 +260,9 @@ header .hero-img {
   .contact .contact-items a i {
     font-size: 5rem;
   }
+  .card {
+    width: 30%;
+  }
   .to-top {
     position: fixed;
     bottom: 32px;
@@ -300,26 +303,27 @@ header .hero-img {
 }
 .aboutme .card-box {
   display: flex;
+  flex-flow: wrap;
   gap: 40px;
   width: 100%;
   max-width: 1800px;
 }
-.aboutme .card {
+.aboutme .card-box .card {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 100%;
   border-radius: 10px;
   border: solid 2px aqua;
-  margin: 50px 0;
+  margin: 50px 10px;
   overflow: hidden;
 }
-.aboutme .card .card-img {
+.aboutme .card-box .card .card-img {
   background-image: url("../img/people-ga97619c2e_1920.jpg");
   background-position: center;
   background-size: cover;
   aspect-ratio: 16/9;
 }
-.aboutme .card .card-body {
+.aboutme .card-box .card .card-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -327,10 +331,10 @@ header .hero-img {
   border-top: solid 1px aqua;
   background-color: #363232;
 }
-.aboutme .card .card-body p, .aboutme .card .card-body h3 {
+.aboutme .card-box .card .card-body p, .aboutme .card-box .card .card-body h3 {
   padding: 30px;
 }
-.aboutme .card .card-body h3 {
+.aboutme .card-box .card .card-body h3 {
   font-size: 2rem;
   text-transform: uppercase;
 }
@@ -340,6 +344,11 @@ header .hero-img {
   text-align: center;
 }
 
+@media (min-width: 776px) {
+  .card {
+    width: 45%;
+  }
+}
 .underline {
   width: 100px;
   height: 3px;

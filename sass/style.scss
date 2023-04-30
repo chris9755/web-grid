@@ -8,6 +8,7 @@
 	padding: 0;
 	margin: 0;
 }
+
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
@@ -16,22 +17,17 @@ html {
 body {
 	font-family: "Lato", sans-serif;
 	background-color: #363232;
-	// display: flex;
-	// flex-direction: column;
-	// justify-content: center;
-	// align-items: center;
 	min-height: 100vh;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 }
+
 main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	// margin: 0 10px;
 	width: 100%;
-	// background-color: chocolate;
 	.heading {
 		text-transform: uppercase;
 		margin: 100px 0 10px 0;
@@ -53,6 +49,7 @@ nav {
 	background-size: cover;
 	border-bottom: solid 1px #999;
 }
+
 header {
 	display: flex;
 	width: 100%;
@@ -139,6 +136,7 @@ header {
 		color: aqua;
 	}
 }
+
 .nav-items.active {
 	display: flex;
 	flex-direction: column;
@@ -267,6 +265,9 @@ header {
 	.contact .contact-items a i {
 		font-size: 5rem;
 	}
+	.card{
+		width: 30%;
+	}
 	.to-top {
 		position: fixed;
 		bottom: 32px;
@@ -308,18 +309,20 @@ header {
 
 .card-box{
 	display: flex;
+	flex-flow: wrap;
 	gap: 40px;
 	width: 100%;
 	max-width: 1800px;
-}	
+	
 	.card {
 		display: flex;
 		flex-direction: column;
-		width: 30%;
+		width: 100%;
 		border-radius: 10px;
 		border: solid 2px aqua;
-		margin: 50px 0;
+		margin: 50px 10px;
 		overflow: hidden;
+
 
 		.card-img {
 			background-image: url("../img/people-ga97619c2e_1920.jpg");
@@ -343,11 +346,23 @@ header {
 			}
 		}
 	}
+	
+}
+
+
 
 	p {
 		font-size: 2rem;
 		padding: 60px 30px;
 		text-align: center;
+	}
+}
+
+
+
+@media (min-width:776px){
+	.card{
+		width: 45%;
 	}
 }
 
