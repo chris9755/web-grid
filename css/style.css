@@ -294,13 +294,13 @@ header .hero-img {
 }
 .aboutme .card {
   display: flex;
-  height: 700px;
   width: 80%;
   border: solid 1px black;
   background-color: burlywood;
   background-image: url("../img/people-ga97619c2e_1920.jpg");
   background-position: center;
   background-size: cover;
+  aspect-ratio: 16/9;
   border-radius: 10px;
   border: solid 1px aqua;
   margin: 50px 0;
