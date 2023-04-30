@@ -276,8 +276,8 @@ header .hero-img {
 }
 .aboutme .card {
   display: flex;
-  height: 500px;
-  width: 95%;
+  height: 700px;
+  width: 80%;
   border: solid 1px black;
   background-color: burlywood;
   background-image: url("../img/people-ga97619c2e_1920.jpg");
@@ -285,10 +285,11 @@ header .hero-img {
   background-size: cover;
   border-radius: 10px;
   border: solid 1px antiquewhite;
+  margin: 50px 0;
 }
 .aboutme p {
   font-size: 2rem;
-  padding: 20px;
+  padding: 60px;
   text-align: center;
 }
 
@@ -296,7 +297,7 @@ header .hero-img {
   width: 100px;
   height: 3px;
   background-color: aqua;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 .contact {
