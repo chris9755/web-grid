@@ -21,6 +21,13 @@ navBtn.addEventListener("click", () => {
 }
 )
 
+// document.onclick = function(e){
+//   if('.nav-items'.contains(e.target) && '.nav-btn'.contains(e.target))
+//   mobileNav.classList.remove('active');
+//   navBtn.classList.remove('active');
+// }
+
+
 
 
 

@@ -432,3 +432,29 @@ header {
 }
 
 
+header h1 span{
+	animation: 2s blink;
+	color:$secondary-color;
+}
+@keyframes blink {
+	0%{
+		opacity: 0;
+
+	}
+	20%{
+		opacity: 1;
+	}
+	40%{
+		opacity: 0;
+	}
+	60%{
+		opacity: 1;
+	}
+	80%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+	
+}

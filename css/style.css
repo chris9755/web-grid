@@ -30,7 +30,7 @@ main .heading {
   text-transform: uppercase;
   margin: 100px 0 10px 0;
   font-size: 2.4rem;
-  color: antiquewhite;
+  color: rgb(250, 235, 215);
 }
 
 nav {
@@ -51,7 +51,7 @@ header {
   display: flex;
   width: 100%;
   margin-top: 80px;
-  color: antiquewhite;
+  color: rgb(250, 235, 215);
 }
 header h1 {
   text-align: center;
@@ -99,7 +99,7 @@ header .hero-img {
   display: flex;
   align-items: center;
   margin-left: 25px;
-  color: antiquewhite;
+  color: rgb(250, 235, 215);
 }
 .nav-container .logo p {
   font-size: 2.8rem;
@@ -115,7 +115,7 @@ header .hero-img {
   padding: 15px;
   background: none;
   border: none;
-  color: antiquewhite;
+  color: rgb(250, 235, 215);
   font-size: 3rem;
 }
 
@@ -175,7 +175,7 @@ header .hero-img {
     font-size: 2rem;
     margin: 0 25px;
     white-space: nowrap;
-    color: antiquewhite;
+    color: rgb(250, 235, 215);
     transition: 0.35s;
     overflow: hidden;
   }
@@ -217,7 +217,7 @@ header .hero-img {
   width: 100%;
   height: 100%;
   display: flex;
-  border: solid 1px antiquewhite;
+  border: solid 1px rgb(250, 235, 215);
   overflow: hidden;
 }
 .grid-container .grid-item img {
@@ -304,7 +304,7 @@ header .hero-img {
   background-attachment: fixed;
   background-image: url("../img/rain-g94c91878f_1920.jpg");
   background-size: cover;
-  color: antiquewhite;
+  color: rgb(250, 235, 215);
 }
 .aboutme p {
   max-width: 1800px;
@@ -406,5 +406,31 @@ header .hero-img {
 }
 .footer p {
   font-size: 2rem;
-  color: antiquewhite;
+  color: rgb(250, 235, 215);
+}
+
+header h1 span {
+  animation: 2s blink;
+  color: rgb(0, 255, 255);
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */
