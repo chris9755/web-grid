@@ -331,8 +331,10 @@ header .hero-img {
   background-position: center;
   background-size: cover;
   aspect-ratio: 16/9;
-  filter: blur(0px);
-  transition: ease 0.4s;
+  transition: ease 0.5s;
+}
+.aboutme .card-box .card .card-img:hover {
+  filter: contrast(1.6);
 }
 .aboutme .card-box .card .card-body {
   display: flex;
