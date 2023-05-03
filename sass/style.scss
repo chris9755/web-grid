@@ -341,6 +341,9 @@ header {
 			transition: ease 0.5s;
 			&:hover{
 				filter: contrast(1.6);
+			&~.card-body{
+				filter: blur(3px);
+			}	
 			}
 		}
 		

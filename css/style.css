@@ -336,6 +336,9 @@ header .hero-img {
 .aboutme .card-box .card .card-img:hover {
   filter: contrast(1.6);
 }
+.aboutme .card-box .card .card-img:hover ~ .card-body {
+  filter: blur(3px);
+}
 .aboutme .card-box .card .card-body {
   display: flex;
   flex-direction: column;
