@@ -21,6 +21,17 @@ navBtn.addEventListener("click", () => {
 }
 )
 
+
+
+const navItems = document.querySelectorAll('.nav-items');
+
+navItems.forEach(item => {
+  item.addEventListener('click', () => {
+      navBtn.classList.remove('active');
+      mobileNav.classList.remove('active');
+  });
+});
+
 // document.onclick = function(e){
 //   if('.nav-items'.contains(e.target) && '.nav-btn'.contains(e.target))
 //   mobileNav.classList.remove('active');

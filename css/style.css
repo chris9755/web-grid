@@ -149,11 +149,6 @@ header .hero-img {
   height: 400px;
 }
 
-@media (max-width: 768px) {
-  .nav-items.active .one {
-    display: none;
-  }
-}
 @media (min-width: 768px) {
   .nav-btn {
     display: none;
