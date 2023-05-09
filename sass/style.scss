@@ -211,7 +211,12 @@ header {
 	flex-direction: column;
 	align-items: center;
 }
+// [gallery]{
+	// scroll-margin-top: 150px;
+
+// }
 .grid-container {
+	scroll-margin-top: 210px;
 	margin-left: 8px;
 	margin-right: 8px;
 	max-width: 1800px;
