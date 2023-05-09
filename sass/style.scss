@@ -69,7 +69,7 @@ header {
 		font-size: 2.8rem;
 		padding: 0 20px;
 	}
-	
+
 	.hero-img {
 		display: flex;
 		align-items: center;
@@ -123,8 +123,6 @@ header {
 	}
 }
 
-
-
 .nav-items {
 	display: flex;
 	flex-direction: column;
@@ -152,13 +150,12 @@ header {
 	left: 0;
 	transition: ease 0.4s;
 	background-image: url("../img/banner-gdc475eb52_1920.jpg");
-	border-bottom: 1px solid aqua;
+	border-bottom: 1px solid $secondary-color;
 	height: 400px;
-	
 }
 
-.nav-btn.active{
-	color: aqua;
+.nav-btn.active {
+	color: $secondary-color;
 }
 // @media (max-width: 768px) {
 // 	.nav-items.active {
@@ -195,7 +192,7 @@ header {
 		a::after {
 			position: absolute;
 			content: "";
-			bottom: 10px;
+			bottom: 15px;
 			left: -100%;
 			width: 100%;
 			height: 3px;
@@ -219,7 +216,7 @@ header {
 	align-items: center;
 }
 // [gallery]{
-	// scroll-margin-top: 150px;
+// scroll-margin-top: 150px;
 
 // }
 .grid-container {
@@ -287,7 +284,7 @@ header {
 	.contact .contact-items a i {
 		font-size: 5rem;
 	}
-	
+
 	.to-top {
 		position: fixed;
 		bottom: 32px;
@@ -300,7 +297,7 @@ header {
 		font-size: 20px;
 		text-decoration: none;
 		background-color: rgba(0, 255, 255, 0.6);
-		color:$background-color ;
+		color: $background-color;
 		opacity: 0;
 		pointer-events: none;
 		transition: 0.5s;
@@ -323,66 +320,61 @@ header {
 	background-image: url("../img/rain-g94c91878f_1920.jpg");
 	background-size: cover;
 	color: $primary-color;
-	p{
+	p {
 		max-width: 1800px;
 	}
 
-.card-box{
-	display: flex;
-	justify-content: center;
-	flex-flow: wrap;
-	gap: 40px;
-	width: 95%;
-	max-width: 1800px;
-	
-	.card {
+	.card-box {
 		display: flex;
-		flex-direction: column;
-		width: 100%;
-		border-radius: 10px;
-		border: solid 2px $secondary-color;
-		margin: 50px 10px;
-		overflow: hidden;
+		justify-content: center;
+		flex-flow: wrap;
+		gap: 40px;
+		width: 95%;
+		max-width: 1800px;
 
-
-		.card-img {
-			background-image: url("../img/people-ga97619c2e_1920.jpg");
-			background-position: center;
-			background-size: cover;
-			aspect-ratio: 16/9;
-			transition: ease 0.5s;
-			&:hover{
-				filter: contrast(1.6);
-			&~.card-body{
-				filter: blur(3px);
-			}	
-			}
-		}
-		
-		.card-body{
+		.card {
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			border-top: solid 1px $secondary-color;
-			background-color: $background-color;
-			filter: blur(0px);
-			p, h3{
-				padding: 30px;
+			width: 100%;
+			border-radius: 10px;
+			border: solid 2px $secondary-color;
+			margin: 50px 10px;
+			overflow: hidden;
+
+			.card-img {
+				background-image: url("../img/people-ga97619c2e_1920.jpg");
+				background-position: center;
+				background-size: cover;
+				aspect-ratio: 16/9;
+				transition: ease 0.5s;
+				&:hover {
+					filter: contrast(1.6);
+					& ~ .card-body {
+						filter: blur(3px);
+					}
+				}
 			}
-			h3{
-				font-size: 2.4rem;
-				font-weight: bold;
-				text-transform: uppercase;
+
+			.card-body {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				border-top: solid 1px $secondary-color;
+				background-color: $background-color;
+				filter: blur(0px);
+				p,
+				h3 {
+					padding: 30px;
+				}
+				h3 {
+					font-size: 2.4rem;
+					font-weight: bold;
+					text-transform: uppercase;
+				}
 			}
 		}
-		
 	}
-	
-}
-
-
-
 
 	p {
 		font-size: 2rem;
@@ -391,25 +383,23 @@ header {
 	}
 }
 
-@media (min-width:576px) {
-	.aboutme .card-box .card{
+@media (min-width: 576px) {
+	.aboutme .card-box .card {
 		width: 80%;
 	}
 }
 
-@media (min-width:776px) and (max-width:992px) {
-	.aboutme .card-box .card{
+@media (min-width: 776px) and (max-width: 992px) {
+	.aboutme .card-box .card {
 		width: 40%;
 	}
 }
 
-@media (min-width:992px) {
-	.aboutme .card-box .card{
+@media (min-width: 992px) {
+	.aboutme .card-box .card {
 		width: 30%;
 	}
 }
-
-
 
 .contact {
 	display: flex;
@@ -423,10 +413,10 @@ header {
 		position: relative;
 		i {
 			font-size: 4rem;
-			margin: 40px;
+			margin: 50px;
 			color: $secondary-color;
 			transition: 0.4s;
-			opacity: 0.7;
+			opacity: 0.6;
 		}
 		i:hover {
 			scale: 1.5;
@@ -448,36 +438,33 @@ header {
 	}
 }
 
-
-header h1 span{
+header h1 span {
 	animation: 2s blink;
-	color:$secondary-color;
+	color: $secondary-color;
 }
 @keyframes blink {
-	0%{
-		opacity: 0;
-
-	}
-	20%{
-		opacity: 1;
-	}
-	40%{
+	0% {
 		opacity: 0;
 	}
-	60%{
+	20% {
 		opacity: 1;
 	}
-	70%{
+	40% {
 		opacity: 0;
 	}
-	80%{
+	60% {
 		opacity: 1;
 	}
-	90%{
+	70% {
 		opacity: 0;
 	}
-	100%{
+	80% {
 		opacity: 1;
 	}
-	
+	90% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
