@@ -119,6 +119,7 @@ header {
 		border: none;
 		color: $primary-color;
 		font-size: 3rem;
+		transition: 1s;
 	}
 }
 
@@ -153,6 +154,11 @@ header {
 	background-image: url("../img/banner-gdc475eb52_1920.jpg");
 	border-bottom: 1px solid aqua;
 	height: 400px;
+	
+}
+
+.nav-btn.active{
+	color: aqua;
 }
 // @media (max-width: 768px) {
 // 	.nav-items.active {
