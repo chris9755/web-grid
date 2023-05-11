@@ -394,10 +394,10 @@ header .hero-img {
 }
 .contact .contact-items i {
   font-size: 4rem;
-  margin: 50px;
   color: rgb(0, 255, 255);
   transition: 0.4s;
   opacity: 0.6;
+  padding: 30px;
 }
 .contact .contact-items i:hover {
   scale: 1.5;

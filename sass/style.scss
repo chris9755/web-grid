@@ -413,10 +413,11 @@ header {
 		position: relative;
 		i {
 			font-size: 4rem;
-			margin: 50px;
+			// margin: 50px;
 			color: $secondary-color;
 			transition: 0.4s;
 			opacity: 0.6;
+			padding: 30px;
 		}
 		i:hover {
 			scale: 1.5;
